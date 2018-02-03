@@ -1,0 +1,32 @@
+body {
+    
+    font-family: sans-serif;
+    background-color: #222222;
+}
+.wrapper {
+    background-color: #424242;
+    padding: 30px;
+    width: 50%;
+    margin: auto;
+    margin-top: 50px;
+    padding-bottom: 100px;
+    color: #CCCCCC;
+}
+h1,h3 {
+    text-align: center;
+}
+.dabba {
+	margin-left: 220px;
+	padding: 20px;
+	padding-top: 1px;
+	padding-bottom: 3px;
+}
+
+#butt {
+    	margin-left: 290px;
+	padding-bottom: 30px;
+}
+.t{
+	margin-left: 180px;
+	font-size: 30px;
+}
