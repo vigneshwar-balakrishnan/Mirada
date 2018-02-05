@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>MIRADA</title>
+<link rel="stylesheet" href="real.css">
+ <meta charset='utf-8'>
+</head>
+<body>
+  
+
+<div class="wrapper">
+    <h1>MIRADA</h2>    
+
+    <h3>Capture</h3>
+    
+  <div class="image-upload">   
+    <input id="file-input" type="file" onchange="encodeImageFileAsURL(this)" />
+    <label for="file-input">
+            <img src="cameraIcon.png" width="100px" height="100px" />
+        </label>  
+  </div>
+       <p id="butt">
+    
+ </p>
+ <div class="playArea">
+            <img id="previewImg" src="#" alt="">
+            <div id="displayText">
+
+            </div>
+  
+  <div class="t">
+     <audio id="myAudioElement" controls="controls"/>
+    
+  </div>
+ 
+</div>
+
+<script src="apiCreds.js"></script>
+<script src="scriptOne.js"></script>
+</body>
+</html> 
