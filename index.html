@@ -1,34 +1,53 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
 <head>
-<title>text to speech</title>
-<link rel="stylesheet" href="basic.css">
- <meta charset='utf-8'>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        .image-upload>input {
+            display: none;
+        }
+
+        label img {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        #previewImg {
+            display: inline-block;
+            /* max-height: 100%; */
+            max-width: 100%;
+        }
+
+    </style>
 </head>
+
 <body>
-    <script src="http://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.js"></script>.
+    <div class="image-upload">
+        <label for="file-input">
+            <img src="cameraIcon.png" width="100px" height="100px" />
+        </label>
+
+        <input id="file-input" type="file" onchange="encodeImageFileAsURL(this)" />
+        
+        <div class="playArea">
+            <img id="previewImg" src="#" alt="">
+            <div id="displayText">
+
+            </div>
+            <audio id="myAudioElement" controls="controls"/>
+        </div>
+        <img id="playButton" width="50px" height="50px" src="playIcon.png" alt="play">
     
-    <script src="working.js"></script>
+    </div>
 
-<div class="wrapper">
-	<h1>Aide Muette</h2>	
-
-	<h3>Type your mind out</h3>
-	
-  <div class="dabba">	
-	<input id="say" type="text" name="text">
-  </div>
-       <p id="butt">
-     <button  type='button' onclick="inform()">SAY IT!</button>
- </p>
-  
-  <div class="t">
-	<audio controls="controls">
-	<source src="audio.wav" type="audio/wav">
-    </audio>
-    <p> 🤐---------------------->>>😎</p>	
-  </div>
- 
-</div>
+    <script src="apiCreds.js"></script>
+    <script src="scriptOne.js"></script>
 </body>
-</html> 
+
+</html>
