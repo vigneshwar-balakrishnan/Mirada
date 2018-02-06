@@ -1,0 +1,86 @@
+.image-upload>input {
+            display: none;
+        }
+
+        .image-upload {
+        }
+
+        label img {
+            position: absolute;
+            top: 350px;
+            left: 930px;
+            transform: translate(-50%, -50%);
+        }
+        
+
+#previewImg {
+            
+            
+             max-height: 100%; 
+            max-width: 100%;
+        }
+
+body {
+    
+    font-family: sans-serif;
+    background-color: lightblue;
+ 
+}
+.wrapper {
+    background-image: url("/home/vigneshwar/Desktop/Mirada/half.jpg");
+    padding: 80px;
+    width: 50%;
+    margin: auto;
+    
+    margin-top: 50px;
+    padding-bottom: 200px;
+    padding-top: 40px;
+    color: black;
+    
+    
+}
+h1 {
+    text-align: center;
+    margin-bottom: 10px;
+    margin-top: 0px;
+    font-size: 50px;
+}
+.image-upload{
+    margin-left: 70px;
+    padding: 20px;
+    width: 50%; 
+    
+    margin-top: 90px;
+}
+
+.t{
+    margin-left: 300px;
+    font-size: 30px;
+    margin-top: 200px;
+}
+
+
+#displayText{
+    margin-top: 80px;
+    position: absolute;
+    width: 700px;
+
+}
+p{
+    left: 400px;
+     margin: 2px;
+     padding-top: 20px;
+
+     font-size: 20px;
+text-align: right;
+ 
+
+}
+.playArea{
+    position: absolute;
+    left:25%;
+    top:30%;
+
+    width: 400px;
+    height:400px;
+}

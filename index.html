@@ -1,53 +1,40 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
-    <style>
-        .image-upload>input {
-            display: none;
-        }
-
-        label img {
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-        }
-
-        #previewImg {
-            display: inline-block;
-            /* max-height: 100%; */
-            max-width: 100%;
-        }
-
-    </style>
+<title>MIRADA</title>
+<link rel="stylesheet" href="real.css">
+ <meta charset='utf-8'>
 </head>
-
 <body>
-    <div class="image-upload">
-        <label for="file-input">
-            <img src="cameraIcon.png" width="100px" height="100px" />
-        </label>
+  
 
-        <input id="file-input" type="file" onchange="encodeImageFileAsURL(this)" />
-        
-        <div class="playArea">
-            <img id="previewImg" src="#" alt="">
-            <div id="displayText">
+<div class="wrapper">
+    <h1>MIRADA</h2>    
 
-            </div>
-            <audio id="myAudioElement" controls="controls"/>
-        </div>
-        <img id="playButton" width="50px" height="50px" src="playIcon.png" alt="play">
+    <p>Just click that round thing!</p>
     
-    </div>
+  <div class="image-upload">   
+    <input id="file-input" type="file" onchange="encodeImageFileAsURL(this)" />
+    <label for="file-input">
+            <img src="cameraIcon.png" width="100px" height="100px" />
+        </label>  
+  </div>
+ <div class="playArea">
+            <img id ="previewImg" src="#" alt="">
 
-    <script src="apiCreds.js"></script>
-    <script src="scriptOne.js"></script>
+            </div>  
+  
+  <div class="t">
+     <audio id="myAudioElement" controls="controls"/>
+    
+  </div>
+  <div id="displayText"></div>  
+    
+ 
+</div>
+
+
+<script src="apiCreds.js"></script>
+<script src="scriptOne.js"></script>
 </body>
-
-</html>
+</html> 
